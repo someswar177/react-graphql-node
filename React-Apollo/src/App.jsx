@@ -1,5 +1,5 @@
 import './App.css'
-import UserList from './UserList'
+import DisplayData from './DisplayData'
 import { ApolloClient, InMemoryCache } from '@apollo/client'
 import { ApolloProvider } from '@apollo/client/react'
 import { HttpLink } from '@apollo/client/link/http'
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <UserList />
+      <DisplayData />
     </ApolloProvider>
   )
 }
